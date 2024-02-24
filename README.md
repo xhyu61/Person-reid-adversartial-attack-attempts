@@ -40,3 +40,8 @@ In `adv.py`, comment out line 299, uncomment line 295-297, use the command below
 python adv.py --gpu_ids 0 --name ft_ResNet50 --batchsize 32 --which_epoch "last" --use_FGSM
 ```
 Change model name after `--name` to yours.
+
+## some results
+### 1.ft_ResNet50
+Original: Rank@1:0.795724 Rank@5:0.940915 Rank@10:0.959620 mAP:0.653974
+FGSM:     Rank@1:0.013955 Rank@5:0.032957 Rank@10:0.044537 mAP:0.017642
